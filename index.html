@@ -1,13 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam</title>
+    <title>HTML/CSS Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eea69994e3.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
+    <header class="flex-between">
+        <div class="logo">
+            <img src="assets/logo.svg" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Launch</a></li>
+                <li><a class="pink-text"href="#">Sign Up</a></li>
+            </ul>
+            <label for="burger-check"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" name="burber-check" id="burger-check">
+            <div class="scroll-down-menu">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Launch</a></li>
+                    <li><a class="pink-text" href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <p class="pink-paragraph">Launching Soon</p>
+                <h1 class="strong-header">An NFT like no other</h1>
+                <p class="dark2-text">Don’t miss out on the release of our new NFT. Sign up below to receive updates
+                    when we go live.
+                </p>
+                <div class="sign-up-btn">
+                    <a href="#">Sign Up</a>
+                </div>
+                <!-- <button class="sign-up-btn">Sign Up</button> -->
+                <!-- <input class="sign-up-btn" type="button" value="Sign Up"> -->
+            </div>
+            <img src="assets/graphic.svg" alt="NFT Something">
+        </section>
+        <section class="upsell">
+            <h2 class="normal-header">Free NFT for early birds</h1>
+                <p class="dark1-text">
+                    Sign up today and you’ll get a free NFT when we launch.
+                </p>
+        </section>
+        <section class="press">
+            <img src="assets/companies/1.svg" alt="">
+            <img src="assets/companies/2.svg" alt="">
+            <img src="assets/companies/3.svg" alt="">
+            <img src="assets/companies/4.svg" alt="">
+            <img src="assets/companies/5.svg" alt="">
+        </section>
+        <section class="showcase">
+            <h2 class="normal-header">LE Super Rare Auction</h2>
+            <p class="dark2-text">We have released four limited edition NFTs early which can be bid on via OpenSea.</p>
+            <div class="nft-s">
+                <div class="nft">
+                    <img src="assets/ntfs/ntf-1.svg" alt="NFT">
+                    <div>
+                        <p class="gloop-series">Gloop Series</p>
+                        <p class="nft-name">Purple Man</p>
+                        <p class="nft-number">#12983</p>
+                    </div>
+                    <div>
+                        <p class="bid-type">TOP BID</p>
+                        <span class="nft-price"><img src="assets/eth.svg" alt="ETH sign"> 2.99 ETH</span>
+                        <p class="bid-time-left">1 day left</p>
+                    </div>
+                </div>
+                <div class="nft">
+                    <img src="assets/ntfs/nft-2.svg" alt="NFT">
+                    <div>
+                        <p class="gloop-series">Gloop Series</p>
+                        <p class="nft-name">Beige</p>
+                        <p class="nft-number">#12983</p>
+                    </div>
+                    <div>
+                        <p class="bid-type">TOP BID</p>
+                        <span class="nft-price"><img src="assets/eth.svg" alt="ETH sign"> 2.99 ETH</span>
+                        <p class="bid-time-left">1 day left</p>
+                    </div>
+                </div>
+                <div class="nft">
+                    <img src="assets/ntfs/ntf-3.svg" alt="NFT">
+                    <div>
+                        <p class="gloop-series">Gloop Series</p>
+                        <p class="nft-name">Red Man</p>
+                        <p class="nft-number">#12983</p>
+                    </div>
+                    <div>
+                        <p class="bid-type">TOP BID</p>
+                        <span class="nft-price"><img src="assets/eth.svg" alt="ETH sign"> 2.99 ETH</span>
+                        <p class="bid-time-left">1 day left</p>
+                    </div>
+                </div>
+                <div class="nft">
+                    <img src="assets/ntfs/ntf-4.svg" alt="NFT">
+                    <div>
+                        <p class="gloop-series">Gloop Series</p>
+                        <p class="nft-name">Green</p>
+                        <p class="nft-number">#12983</p>
+                    </div>
+                    <div>
+                        <p class="bid-type">TOP BID</p>
+                        <span class="nft-price"><img src="assets/eth.svg" alt="ETH sign"> 2.99 ETH</span>
+                        <p class="bid-time-left">1 day left</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-upsell">
+            <div class="footer-upsell-left">
+                <p class="pink-paragraph">Launching Soon</p>
+                <h1 class="strong-header">An NFT like no other</h1>
+                <p class="dark2-text">Don’t miss out on the release of our new NFT. Sign up below to receive updates
+                    when we go live.
+                </p>
+                <div class="sign-up-btn">
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+            <img src="assets/upsell-footer-image.svg" alt="">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo-social-links">
+                <img class="logo" src="assets/logo.svg" alt="Logo">
+                <p class="dark2-text">Exclusive NFT Collection</p>
+                <a href="#"><i class="dark2-text fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="dark2-text fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="dark2-text fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="dark2-text fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="empty-space"></div>
+            <div class="footer-top-tables">
+                <table>
+                    <tr>
+                        <th class="footer-links-categories">About</t>
+                    </tr>
+                    <tr>
+                        <td><a href="#">About</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Terms</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Legal</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th class="footer-links-categories">NFT</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">OpenSea</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Learn</a></td>
+                    </tr>
     
+                </table>
+                <table>
+                    <tr>
+                        <th class="footer-links-categories">Contact</>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Press</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Support</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th class="footer-links-categories">Social</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Twitter</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Instagram</a></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">&copy Copyright 2022 MFTlanding</div>
+            <div class="launch-date-text">Launching August 2022</div>
+        </div>
+    </footer>
 </body>
 </html>

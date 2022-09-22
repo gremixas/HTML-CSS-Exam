@@ -15,3 +15,402 @@
     --light-orange: #FFF0E8;
 }
 
+html, a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal; 
+    font-size: 16px;
+    color: var(--dark1);
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+main > :not(.upsell), footer {
+    padding: 32px;
+    position: relative;
+}
+
+.footer-upsell {
+    padding-bottom: 0!important;
+    display: flex;
+}
+
+/* main > :not(.upsell, .hero, .press)::after { */
+.showcase::after, .footer-upsell::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 32px;
+    border: 1px solid var(--light2);
+    border-radius: 2px;
+}
+
+.showcase {
+    overflow-x: scroll;
+}
+
+.dark1-text {
+    color: var(--dark1);
+}
+
+.dark2-text {
+    color: var(--dark2);
+}
+
+.dark3-text {
+    color: var(--dark3);
+}
+
+.dark4-text {
+    color: var(--dark4);
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    max-width: 1440px;
+    overflow-x: hidden;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pink-text {
+    color: var(--pink);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.5em;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--dark2);
+    font-weight: 400;
+}
+
+.logo {
+    width: 198px;
+    height: 36px;
+}
+
+.nav-links {
+    display: none;
+}
+
+.press img:nth-child(3) {
+    display: none;
+}
+
+
+.hero {
+    display: flex;
+    padding: 30px 0 30px 32px;
+    position: relative;
+    min-height: calc(20vw + 200px);
+}
+
+.hero > div {
+    width: 60%;
+}
+
+.hero > img {
+    position: absolute;
+    height: calc(20vw + 350px);
+    top: -10px;
+    left: 45%;
+}
+
+.pink-paragraph {
+    color: var(--pink);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.strong-header {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.normal-header {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.press {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.press img {
+    margin: 15px;
+}
+
+.upsell {
+    padding: 40px 32px 25px 32px;
+    /* background: linear-gradient(45deg, var(--red), var(--orange), var(--orange), var(--green)),
+                linear-gradient(135deg, var(--pink), var(--pink), var(--orange), var(--orange), var(--green)); */
+    /* background: radial-gradient(circle, rgba(255,129,57,1) 50%, rgba(57,255,160,1) 100%); */
+    background-image: url('assets/background1.png');
+    background-origin: border-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all 300ms;
+}
+
+.sign-up-btn {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    border-radius: 37px;    
+    margin: 30px 5px;
+    height: 50px;
+    width: 140px;
+    line-height: 48px;
+    background: #fff;
+    transition: all 150ms;
+}
+
+.sign-up-btn:hover {
+    scale: 1.1;
+    background: #fff;
+
+    /* opacity: 80%; */
+}
+
+.sign-up-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -111;
+    margin: -5px;
+    border-radius: inherit;
+    /* background-image: linear-gradient(135deg, var(--pink), var(--orange), var(--green)); */
+    background-image: url('assets/background1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.nft-s {
+    display: flex;
+    gap: 1em;
+    flex-shrink: 0;
+}
+
+.nft {
+    background-color: var(--light2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+}
+
+.nft > img {
+    grid-column: 1 / 3;
+}
+
+.nft > div {
+    display: grid;
+    margin: 0 1rem;
+    grid-template-rows: 3rem 3rem 3rem;
+    align-items: center;
+    line-height: 100%;
+}
+
+.nft > div:nth-child(3) {
+    text-align: right;
+}
+
+.gloop-series {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 500;
+    grid-row: 1;
+}
+
+.nft-name, .nft-price {
+    font-size: 20px;
+    color: var(--dark1);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.nft-price {
+justify-content: end;
+gap: 0.3em;
+}
+
+.nft-number, .bid-time-left {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark3);
+}
+
+.bid-type {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--dark3);
+}
+
+.footer-upsell img {
+    align-self: flex-end;
+}
+
+footer {
+    color: var(--dark2);
+}
+
+footer i {
+    font-size: 18px;
+    margin: 7px;
+}
+
+footer table {
+    text-align: left;
+    margin-right: 3em;
+}
+
+footer th {
+    height: 3em;
+}
+
+footer td {
+    height: 1.5em;
+}
+
+.footer-links-categories {
+    font-weight: 700;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-top-tables {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.empty-space {
+    min-width: 3em;
+}
+
+.footer-logo-social-links {
+    margin-bottom: 2em;
+}
+
+.footer-bottom {
+    font-size: 20px;
+    color: var(--dark4);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5em;
+}
+
+#burger-check {
+    display: none;
+}
+
+header {
+    height: 30px;
+    padding: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: var(--light1);
+}
+
+body {
+    margin-top: 100px;
+}
+
+nav .fa-bars {
+    font-size: 28px;
+    /* position: absolute; */
+}
+
+.navigation {
+    position: relative;
+}
+
+.scroll-down-menu ul {
+    position: absolute;
+    opacity: 0.1;
+    top: 45px;
+    right: 0;
+    line-height: 2em;
+    font-weight: 900;
+    height: 130px;
+    width: 130px;
+    transition: all 500ms ease-in-out;
+    transform: translateX(200%);
+}
+
+#burger-check:checked ~ .scroll-down-menu ul {
+    opacity: 0.9;
+    background-color: var(--light1);
+    transform: translateX(65px);
+}
+
+@media screen and (min-width: 768px) {
+    .nav-links {
+        display: revert;
+    }
+
+    .press img:nth-child(3) {
+        display: revert;
+    }
+    
+    .upsell {
+        margin: 0 32px;
+        border-radius: 15px;
+    }
+
+    nav .fa-bars {
+        display: none;
+    }
+
+    .footer-bottom {
+        padding-top: 3em;
+    }
+
+    header {
+        position: relative;
+    }
+
+    body {
+        margin-top: 0;
+    }
+
+    .scroll-down-menu ul {
+        display: none;
+    }
+    
+}
