@@ -30,7 +30,7 @@ p {
 }
 
 main > :not(.upsell, .press), footer {
-    padding: 32px;
+    padding: 80px 32px;
     position: relative;
 }
 
@@ -50,10 +50,6 @@ main > :not(.upsell, .press), footer {
     margin: 0 32px;
     border: 1px solid var(--light2);
     border-radius: 2px;
-}
-
-.nft-s {
-    overflow-x: auto;
 }
 
 .dark1-text {
@@ -135,7 +131,7 @@ li {
 .hero > img {
     position: absolute;
     height: calc(20vw + 350px);
-    top: -10px;
+    top: 10px;
     left: 45%;
 }
 
@@ -157,10 +153,10 @@ li {
 }
 
 .press {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 32px 16px;
+    padding: 0 16px;
+    padding-top: 85px;
 }
 
 .press img {
@@ -174,7 +170,7 @@ li {
     /* background: radial-gradient(circle, rgba(255,129,57,1) 50%, rgba(57,255,160,1) 100%); */
     background-image: url('assets/background1.png');
     background-origin: border-box;
-    background-size: 100% 100%;
+    background-size: 110% 110%;
     background-repeat: no-repeat;
     transition: all 300ms;
 }
@@ -210,7 +206,7 @@ li {
     border-radius: inherit;
     /* background-image: linear-gradient(135deg, var(--pink), var(--orange), var(--green)); */
     background-image: url('assets/background1.png');
-    background-size: 100% 100%;
+    background-size: 110% 110%;
     background-repeat: no-repeat;
 }
 
@@ -218,6 +214,8 @@ li {
     display: flex;
     gap: 1em;
     flex-shrink: 0;
+    overflow-x: auto;
+    padding-top: 40px;
 }
 
 .nft {
