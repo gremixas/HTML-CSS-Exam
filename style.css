@@ -29,7 +29,7 @@ p {
 
 }
 
-main > :not(.upsell), footer {
+main > :not(.upsell, .press), footer {
     padding: 32px;
     position: relative;
 }
@@ -92,6 +92,10 @@ body {
     color: var(--pink);
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 li {
     list-style: none;
     display: inline-block;
@@ -112,7 +116,7 @@ li {
     display: none;
 }
 
-.press img:nth-child(3) {
+.press img:nth-child(4) {
     display: none;
 }
 
@@ -156,6 +160,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 32px 16px;
 }
 
 .press img {
@@ -191,8 +196,6 @@ li {
 .sign-up-btn:hover {
     scale: 1.1;
     background: #fff;
-
-    /* opacity: 80%; */
 }
 
 .sign-up-btn::after {
@@ -353,7 +356,6 @@ body {
 
 nav .fa-bars {
     font-size: 28px;
-    /* position: absolute; */
 }
 
 .navigation {
@@ -379,12 +381,38 @@ nav .fa-bars {
     transform: translateX(65px);
 }
 
+.nav-links a, .footer-logo-social-links i {
+    transition: all 150ms ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links a:focus,
+.footer-logo-social-links i:hover,
+.footer-logo-social-links i:focus,
+.footer-top-tables a:hover,
+.footer-top-tables a:focus {
+    color: var(--pink);
+}
+
+@media screen and (max-width: 767px) {
+    .boomerang-crop {
+        width: 155px;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+    
+    .press {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .nav-links {
         display: revert;
     }
 
-    .press img:nth-child(3) {
+    .press img:nth-child(4) {
         display: revert;
     }
     
@@ -412,5 +440,8 @@ nav .fa-bars {
     .scroll-down-menu ul {
         display: none;
     }
-    
+
+    .showcase::after, .footer-upsell::after {
+        margin: 0;
+    }    
 }
